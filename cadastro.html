@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Colaborador</title>
+
+    <link rel="stylesheet" href="Estilização.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Cadastro de Novo Colaborador</h1>
+
+        <form method="post" action="processadorCadastro.php">
+
+            <label for="nome">Nome Completo:</label>
+            <input
+                type="text"
+                name="nome"
+                id="nome"
+                placeholder="Digite seu nome completo"
+                required
+            >
+
+            <label for="idade">Idade:</label>
+            <input
+                type="number"
+                name="idade"
+                id="idade"
+                placeholder="Ex.: 18"
+                required
+            >
+
+            <label for="profissao">Profissão:</label>
+            <input
+                type="text"
+                name="profissao"
+                id="profissao"
+                placeholder="Ex.: Técnico em Eletrônica"
+                required
+            >
+
+            <label for="salario">Salário Pretendido:</label>
+            <input
+                type="number"
+                name="salario"
+                id="salario"
+                placeholder="Ex.: 2000"
+                step="0.01"
+                required
+            >
+
+            <label for="experiencia">Experiência Anterior:</label>
+            <textarea
+                name="experiencia"
+                id="experiencia"
+                rows="6"
+                placeholder="Descreva sua experiência profissional..."
+                required
+            ></textarea>
+
+            <input
+                type="submit"
+                name="Enviar"
+                id="enviar"
+                value="Cadastrar"
+            >
+
+        </form>
+
+    </div>
+
+</body>
+</html>
